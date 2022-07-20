@@ -1,0 +1,255 @@
+body{
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+#sfondo{
+  background-color: #c7e0d0;
+  height: 300px;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+}
+
+#links{
+  margin-right: 50px;
+}
+  
+#links a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
+
+#links a:hover{
+  color: #da732d;
+}
+
+#saluto{
+  font-family: 'Poppins';
+  font-weight: 100;
+  color: white;
+  font-size: 50pt;
+  margin-left: 100px;
+  text-decoration: none;
+}
+
+main{
+  width: 80vw;
+  margin: auto;
+  margin-top: -55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+#titolo{
+  width: calc(100% - 30px);
+  background-color: #da732d;
+  font-size: 38pt;
+  font-weight: 100;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#bottoni{
+  display: none;
+}
+
+#bottoni div{
+  border-radius: 5px;
+  border: 1.5px solid #da732d;
+  margin: 0 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.selezionato{
+  background-color: #da732d;
+  color: white;
+}
+
+section{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#piccolo, #grande{
+  border-radius: 20px;
+}
+
+#piccolo{
+  width: calc(38% - 30px);
+  height: fit-content;
+  border: 1.5px solid #da732d;
+  padding: 15px;
+}
+
+form{
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  width: 100%;
+  height: 25px;
+  font-family: 'Poppins';
+}
+
+input:focus, textarea:focus{
+  outline-color: #da732d;
+}
+
+label{
+  margin-bottom: 15px;
+}
+
+textarea{
+  height: 200px;
+  resize: none;
+  font-family: 'Poppins';
+}
+
+p{
+  margin: 0;
+}
+
+span{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#bottone{
+  height: fit-content;
+  width: fit-content;
+  background-color: #da732d;
+  border-radius: 5px;
+  font-size: 12pt;
+  font-family: 'Poppins';
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+#grande{
+  width: calc(58%);
+}
+
+article{
+  font-size: 22pt;
+  width: 100%;
+  background-color: #c7e0d0;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 200;
+}
+
+#recensioni{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteiner{
+  width: calc(100% - 22px);
+  margin: 10px 0px;
+  border: 1px solid slategray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.username{
+  font-size: 14pt;
+  background-color: #da732d;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.title, .autore{
+  font-size: 12pt;
+  font-weight: 500;
+}
+
+.text{
+  font-style: italic;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.icon1 {
+  height: 26px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 950px){
+  main{
+    width: 90vw;
+  }
+
+  #saluto{
+    margin-left: 30px;
+  }
+
+  #links{
+    margin-right: 20px;
+  }
+} 
+
+@media (max-width: 700px){
+  main{
+    margin-top: -45.5px;
+  }
+
+  #sfondo{
+    height: 250px;
+  }
+
+  #saluto{
+    font-size: 40pt;
+  }
+
+  #bottoni{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  #titolo{
+    font-size: 31pt;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  section{
+    justify-content: center;
+  }
+
+  #piccolo{
+    width: calc(100% - 30px);
+  }
+
+  #grande{
+    width: 100%;
+  }
+}

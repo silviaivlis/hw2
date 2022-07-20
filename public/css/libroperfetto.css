@@ -1,0 +1,246 @@
+body{
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+#sfondo{
+  background-color: #c7e0d0;
+  height: 300px;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+}
+  
+#links{
+  margin-right: 50px;
+}
+
+#links a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
+
+#links a:hover{
+  color: #fbe79e;
+}
+
+#saluto{
+  font-family: 'Poppins';
+  font-weight: 100;
+  color: white;
+  font-size: 50pt;
+  margin-left: 100px;
+  text-decoration: none;
+}
+
+main{
+  width: 80vw;
+  margin: auto;
+  margin-top: -55px;
+  display: flex;
+  flex-direction: column;
+}
+
+#titolo{
+  width: calc(100% - 30px);
+  background-color: #fbe79e;
+  font-size: 38pt;
+  font-weight: 100;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#test{
+  margin-bottom: 50px;
+}
+
+.choice-grid{
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.choice-grid div{
+  display: flex;
+  flex-direction: column;
+  width: calc(49% - 22px);
+  margin-bottom: 20px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+}
+
+.choice-grid img.checkbox {
+  margin-top: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+div p{
+  color: red;
+  margin: 0;
+  padding: 5px;
+}
+
+div.selezionato{
+  background-color: #cfe3ff;
+}
+
+div.scartato{
+  opacity: 0.6;
+}
+
+.hidden{
+  display: none;
+}
+
+#risultato h1{
+  text-align: center;
+  margin-top: 30px;
+}
+
+#library-view{
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.book{
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.copertina{
+  max-height: 190px;
+}
+
+.contenuto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titolo{
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.autore{
+  font-style: italic;
+  text-align: center;
+}
+
+.bottone{
+  background-color: #fbe79e;
+  color: white;
+  border-radius: 5px;
+  padding: 4px 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+#reset{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #cecece;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#reset:hover{
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 950px){
+  main{
+    width: 90vw;
+  }
+
+  #saluto{
+    margin-left: 30px;
+  }
+
+  #links{
+    margin-right: 20px;
+  }
+} 
+
+@media (max-width: 850px){
+  .choice-grid div{
+    width: calc(99% - 22px);
+  }
+
+  .book{
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px){
+  #sfondo{
+    height: 250px;
+  }
+
+  main{
+    margin-top: -45.5px;
+  }
+
+  #saluto{
+    font-size: 40pt;
+  }
+
+  #titolo{
+    font-size: 31pt;
+  }
+
+  #test h1{
+    font-size: 16pt;
+  }
+
+  .choice-grid div{
+    width: calc(99% - 22px);
+  }
+
+  #library-view{
+    width: 80%;
+    margin: auto;
+  }
+
+  .book{
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .copertina{
+    max-height: 150px;
+  }
+
+  .contenuto{
+    align-items: flex-start;
+    margin-left: 10px;
+  }
+
+  .titolo, .autore{
+    text-align: start;
+  }
+}

@@ -1,0 +1,383 @@
+body{
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+#sfondo{
+  background-image: url(../immagini/nuovosfondo5.jpeg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+}
+
+#links{
+  margin-right: 50px;
+}
+
+#links a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
+
+#links a:hover, .testo a:hover{
+  color: #da732d;
+}
+
+.button{
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #da732d;
+  color: white;
+  border-radius: 50px;
+  padding: 6px 8px;
+}
+
+.button:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(211, 187, 155);
+}
+
+#menu span{
+  display: none;
+}
+
+#tendina{
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 183.84px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#flex-conteiner{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#close{
+  margin-top: 15px;
+  margin-right: 20px;
+  font-size: 22pt;
+  color: #da732d;
+  cursor: pointer;
+}
+
+#links-tendina{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#links-tendina a{
+  text-decoration: none;
+  width: fit-content;
+  font-size: 18px;
+  color: #da732d;
+  margin-top: 10px;
+}
+
+#links-tendina a:hover{
+  border-bottom: 2px solid #da732d;
+}
+
+.titolo{
+  font-weight: 100;
+  color: white;
+  font-size: 50pt;
+  margin-left: 100px;
+  text-decoration: none;
+}
+
+main{
+  width: 80vw;
+  margin: auto;
+}
+
+main .titolo{
+  background-color: #da732d;
+  text-align: center;
+  margin-left: 0;
+  border-radius: 20px;
+  font-size: 38pt;
+}
+
+#sottotitolo{
+  margin-top: 10px;
+  margin-bottom: 60px;
+  font-size: 14pt;
+  padding: 5px;
+  text-align: justify;
+}
+
+.articoli{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.articoli article{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  background-color: white;
+  width: calc(33.3% - 10px);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+  
+article img{
+  width: 100%;
+}  
+  
+article .testo{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+  
+.testo a{
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+} 
+  
+button{
+  margin-top: 10px;
+  font-family: 'Poppins';
+  width: fit-content;
+}
+  
+h1{
+  color: #da732d;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 30pt;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#articolo{
+  margin-bottom: 60px;
+}
+
+#articolo img{
+  width: 50%;
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 25px;
+}
+
+#articolo p{
+  text-align: justify;
+}
+
+#articolo h2{
+  display: inline-block;
+  font-size: 18pt;
+  margin: 0px;
+  color: #da732d;
+  font-weight: 400;
+}
+
+#articolo div .titolo{
+  display: inline-block;
+  font-size: 16pt;
+  border-radius: 5px;
+  padding: 0px 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: #c7e0d0;
+  font-family: 'Poppins';
+  font-size: 18pt;
+  font-weight: 100;
+  color: white;
+}
+
+.hidden{
+  display: none;
+}
+
+
+@media (max-width: 900px){
+  main{
+    width: 90vw;
+  }
+
+  #sfondo .titolo{
+    font-size: 40pt;
+    margin-left: 80px;
+  }  
+
+  #sfondo{
+    height: 40vh;
+  }
+
+  nav{
+    height: 60px;
+  }
+
+  main .titolo{
+    font-size: 31pt;
+  }
+
+  #links a, #linklogin a{
+    font-size: 15pt;
+  }
+
+  #sottotitolo{
+    font-size: 12.5pt;
+  }
+
+  .testo a{
+    font-size: 16pt;
+  }
+
+  .testo em{
+    font-size: 11pt;
+  }
+
+  footer{
+    height: 80px;
+  }
+
+  footer div{
+    font-size: 14pt;
+  }
+
+  h1{
+    font-size: 26pt;
+  }
+
+  #articolo h2{
+    font-size: 14pt;
+  }
+  
+  #articolo div .titolo{
+    font-size: 12pt;
+  }
+}
+
+@media (max-width: 750px){
+  .articoli{
+    margin-bottom: 0px;
+  }
+
+  .articoli article{
+      width: calc(50% - 10px);
+  }
+
+  #sfondo{
+    height: 35vh;
+  }
+
+  #sfondo .titolo{
+    font-size: 35pt;
+    margin-left: 60px;
+  } 
+  
+  nav{
+    height: 40px;
+  }
+
+  main .titolo{
+    font-size: 27pt;
+    border-radius: 15px;
+  }
+
+  #sottotitolo{
+    font-size: 11.5pt;
+  }
+
+  footer{
+    height: 60px;
+  }
+
+  footer div{
+    font-size: 11pt;
+    font-weight: 300;
+  }
+
+  #links{
+    display: none;
+  }
+
+  #menu{
+      margin-right: 20px;
+      margin-top: 20px;
+      cursor: pointer;
+  }
+
+  #menu span{
+    display: block;
+    color: white;
+    font-size: 18pt;
+  }
+
+  #links-tendina{
+    padding-top: 5px;
+  }
+
+  #articolo img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px){
+  .articoli article{
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  #sfondo{
+    height: 30vh;
+  }
+
+  #sfondo .titolo{
+    font-size: 30pt;
+    margin-left: 45px;
+  } 
+
+  main .titolo{
+    font-size: 23pt;
+    border-radius: 10px;
+  }
+
+  #sottotitolo{
+    font-size: 11pt;
+    padding: 0;
+  }
+
+  h1{
+    font-size: 20pt;
+  }
+}

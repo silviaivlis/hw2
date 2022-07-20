@@ -1,0 +1,473 @@
+body{
+    margin: 0;
+    font-family: 'Poppins';
+}
+    
+#sfondo{
+    height: 100vh;
+    background-image: url(../immagini/sfondo5.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+}
+
+#links{
+    margin-right: 50px;
+}
+
+#links a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+}
+
+#links a:hover, .testo a:hover{
+    color: #da732d;
+}
+
+.button{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #da732d;
+    color: white;
+    border-radius: 50px;
+    padding: 6px 8px;
+}
+  
+.button:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(211, 187, 155);
+}
+
+#menu span{
+    display: none;
+}
+
+#tendina{
+    background-color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 166.34px;
+}
+
+#flex-conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#close{
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 22pt;
+    color: #da732d;
+    cursor: pointer;
+}
+
+#links-tendina{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#links-tendina a{
+    text-decoration: none;
+    width: fit-content;
+    font-size: 18px;
+    color: #da732d;
+    margin-top: 10px;
+}
+
+#links-tendina a:hover{
+    border-bottom: 2px solid #da732d;
+}
+ 
+section{
+    margin-left: 50px;
+}
+
+.titolo{
+    font-weight: 100;
+    color: white;
+    font-size: 50pt;
+}
+
+header .titolo{
+    font-size: 75pt;
+}
+
+#sottotitolo{
+    font-weight: 300;
+    color: white;
+    font-size: 18pt;
+    margin-left: 10px;
+    line-height: 35px;
+    width: 40vw;
+}
+
+main{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+main .titolo{
+    color:#a6b3cd;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#fasi{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.istruzione{
+    background-color: #a6b3cd;
+    width: 25%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+#fasi h3{
+    font-size: 20pt;
+    margin-top: 0px;
+}
+
+.istruzione span{
+    font-size: 25pt;
+    color: white;
+    margin-bottom: 18px;
+}
+
+#rubrica{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #da732d;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#rubrica .titolo{
+    text-decoration: none;
+}
+
+#vetrina{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.articolo{
+    width: 25%;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.immagine{
+    margin: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+.testo{
+    padding: 10px;
+}
+
+.testo p{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#libroperfetto{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    background-image: url(../immagini/prego3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#libroperfetto section{
+    width: 80vw;
+    margin: auto;
+    font-size: 15pt;
+}
+
+#libroperfetto .titolo{
+    color: black;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #c7e0d0;
+    font-size: 18pt;
+    font-weight: 100;
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+
+@media (max-width: 1015px){
+    #sfondo{
+        height: 80vh;
+    }
+
+    header .titolo{
+        font-size: 60pt;
+    }
+
+    #sottotitolo{
+        font-size: 15pt;
+        line-height: 30px;
+    }
+
+    .titolo{
+        font-size: 40pt;
+    }
+
+    .istruzione{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #fasi h3{
+        font-weight: 500;
+        font-size: 16pt;
+    }
+
+    .istruzione span{
+        font-size: 18pt;
+    }
+
+    .articolo{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #vetrina{
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .immagine{
+        width: 40%;
+    }
+    
+    .testo{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+    }
+
+    main{
+        width: 90vw;
+    }
+
+    footer{
+        height: 70px;
+    }
+
+    footer div{
+        font-size: 14pt;
+    }
+}
+
+@media (max-width: 880px){
+
+    #sottotitolo{
+        font-size: 13pt;
+        line-height: 25px;
+    }
+
+    #sfondo{
+        height: 60vh;
+    }
+
+    header .titolo{
+        font-size: 50pt;
+    }
+
+    .articolo{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .titolo{
+        font-size: 36pt;
+    }
+    
+    main{
+        width: 100vw;
+    }
+
+    #sfondo section{
+        margin-left: 45px;
+    }
+
+    nav{
+        height: 50px;
+    }
+
+    #links{
+        margin-top: 20px;
+    }
+
+    .button{
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    #libroperfetto article{
+        font-size: 14pt;
+    }
+}
+
+@media (max-width: 750px){
+
+    .immagine{
+        display: none;
+    }
+    
+    .testo{
+        width: 100%;
+    }
+
+    .testo p{
+        margin-bottom: 10px;
+        font-size: 14pt;
+    }
+
+    #sfondo{
+        height: 45vh;
+    }
+
+    header .titolo{
+        font-size: 35pt;
+        margin-top: 10px;
+    }
+
+    #sottotitolo{
+        font-size: 11pt;
+        line-height: 20px;
+    }
+
+    #sfondo section{
+        margin-left: 35px;
+        margin-top: -35px;
+    }
+
+    .titolo{
+        font-size: 28pt;
+    }
+
+    .istruzione h3{
+        font-size: 14pt;
+        margin-bottom: 14px;
+    }
+
+    .istruzione div{
+        font-size: 10pt;
+    }
+
+    .istruzione span{
+        font-size: 16pt;
+        margin-bottom: 10px;
+    }
+
+    #rubrica{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .testo em{
+        font-size: 10pt;
+    }
+
+    #libroperfetto article{
+        font-size: 11pt;
+    }
+
+    #libroperfetto{
+        height: 250px;
+    }
+
+    #libroperfetto section{
+        width: 90vw;
+    }
+
+    footer{
+        height: 60px;
+    }
+
+    footer div{
+        font-size: 12pt;
+        font-weight: 300;
+    }
+
+    #vetrina{
+        margin-bottom: 15px;
+        width: 95vw;
+    }
+
+    #links{
+        display: none;
+    }
+
+    #menu{
+        z-index: 1;
+        margin-right: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+    #menu span{
+        display: block;
+        color: white;
+        font-size: 18pt;
+    }
+}

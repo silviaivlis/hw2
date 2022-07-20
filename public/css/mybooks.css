@@ -1,0 +1,284 @@
+body{
+  margin: 0;
+  font-family: 'Poppins';
+}
+
+#sfondo{
+  background-color: #c7e0d0;
+  height: 300px;
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+}
+
+#links{
+  margin-right: 50px;
+}
+    
+#links a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
+
+#links a:hover{
+  color: #a6b3cd;
+}
+
+#saluto{
+  font-weight: 100;
+  color: white;
+  font-size: 50pt;
+  margin-left: 100px;
+  text-decoration: none;
+}
+
+main{
+  width: 80vw;
+  margin: auto;
+  margin-top: -55px;
+  display: flex;
+  flex-direction: column;
+}
+
+#titolo{
+  width: calc(100% - 30px);
+  background-color: #a6b3cd;
+  font-size: 38pt;
+  font-weight: 100;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#bottoni{
+  display: none;
+}
+
+#bottoni div{
+  border-radius: 5px;
+  border: 1.5px solid #a6b3cd;
+  margin: 0 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.selezionato{
+  background-color: #a6b3cd;
+  color: white;
+}
+
+section{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#libreria, #libri{
+  border-radius: 20px;
+}
+
+#libreria{
+  width: calc(38% - 30px);
+  height: fit-content;
+  border: 1.5px solid #a6b3cd;
+  padding: 15px;
+}
+
+h3{
+  font-size: 22pt;
+  width: 100%;
+  /*background-color: #a6b3cd;
+  color: white;*/
+  color: #a6b3cd;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+
+#libri{
+  width: 58%;
+  height: fit-content;
+}
+
+form{
+  width: 100%;
+  font-size: 16pt;
+}
+
+label{
+  width: 100%;
+  display: flex;
+}
+
+input{
+  width: 100%;
+  height: 30px;
+  font-family: 'Poppins';
+}
+
+input:focus{
+  outline-color: #a6b3cd;
+}
+
+#submit{
+  height: fit-content;
+  width: fit-content;
+  background-color: #a6b3cd;
+  border-radius: 5px;
+  font-size: 12pt;
+  font-family: 'Poppins';
+  margin: 0;
+  margin-left: 5px;
+}
+
+#library-view, #personal-library-view {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+#personal-library-view .book{
+  margin: 10px;
+  border: 1px solid slategray;
+  padding: 5px;
+  display: flex;
+}
+
+#personal-library-view .copertina{
+  max-height: 120px;
+  margin-right: 10px;
+}
+
+.contenuto{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.titolo{
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+.testo{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 100%;
+  overflow: scroll;
+}
+
+.autore{
+  font-size: 12pt;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.flex-conteiner{
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.bottone{
+  width: fit-content;
+  height: fit-content;
+  background-color: #a6b3cd;
+  padding: 1px 6px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12pt;
+  color: white;
+}
+
+.icon1, .icon2 {
+  height: 26px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#library-view .book{
+  margin: 10px 0px;
+  border: 1px solid slategray;
+  padding: 5px;
+  height: 200px;
+  display: flex;
+}
+
+#library-view .copertina {
+  max-width: 100%;
+  margin-right: 10px;
+}
+
+.hidden{
+  display: none;
+}
+
+
+@media (max-width: 950px){
+  main{
+    width: 90vw;
+  }
+
+  #saluto{
+    margin-left: 30px;
+  }
+
+  #links{
+    margin-right: 20px;
+  }
+} 
+
+@media (max-width: 750px){
+  #saluto{
+    font-size: 40pt;
+  }
+
+  #titolo{
+    font-size: 31pt;
+  }
+
+  main{
+    margin-top: -45.5px;
+  }
+
+  #sfondo{
+    height: 250px;
+  }
+
+  #bottoni{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .vista{
+    display: none;
+  }
+
+  section{
+    justify-content: center;
+  }
+
+  #libreria{
+    width: calc(100% - 30px);
+  }
+
+  #libri{
+    width: 100%;
+  }
+}

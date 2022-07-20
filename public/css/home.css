@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+#sfondo{
+    background-color: #c7e0d0;
+    height: 300px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+}
+
+#links{
+    margin-right: 50px;
+}
+  
+.button{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #da732d;
+    color: white;
+    border-radius: 50px;
+    padding: 6px 15px;
+}
+  
+.button:hover{
+    background-color: rgb(255, 255, 255);
+    color: #da732d;
+}
+
+#saluto{
+    font-weight: 100;
+    color: white;
+    font-size: 50pt;
+    margin-left: 100px;
+}
+
+main{
+    width: 80vw;
+    margin: auto;
+    margin-top: -55px;
+    display: flex;
+    flex-direction: column;
+}
+
+main section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+#prima .sinistra, #prima .destra{
+    width: 48%;
+}
+
+#seconda .sinistra{
+    width: 58%;
+}
+
+#seconda .destra{
+    width: 38%;
+}
+
+.titolo{
+    font-size: 32pt;
+    text-decoration: none;
+    font-weight: 100;
+    color: white;
+}
+
+span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+}
+
+.icone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 10pt;
+    text-decoration: none;
+}
+
+i{
+    font-size: 30px;
+    color: white;
+}
+
+#mybooks, #recensioni, #rubrica, #libroperfetto{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    height: calc(100% - 30px);
+}
+
+#mybooks{
+    background-color: #a6b3cd;
+}
+
+#recensioni{
+    background-color: #da732d;
+}
+
+#rubrica{
+    background-color: #c5add7;
+}
+
+#rubrica h3{
+    margin-bottom: 0px;
+    color: #c5add7;
+    font-size: 16pt;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+#rubrica article{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+#libroperfetto{
+    background-color: #fbe79e;
+}
+
+
+@media (max-width: 1000px){
+    main{
+      width: 90vw;
+    }
+
+    main section{
+        margin-bottom: 15px;
+    }
+
+    #prima .sinistra, #prima .destra{
+        width: 49%;
+    }
+
+    #seconda .destra{
+        width: 39%;
+    }
+    
+    #seconda .sinistra{
+        width: 59%;
+    }
+
+    #saluto{
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 850px){
+    main section{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    #mybooks, #recensioni, #rubrica, #libroperfetto{
+        width: 445px;
+    }
+
+    #prima .sinistra, #seconda .sinistra{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        margin-bottom: 20px;
+    }
+
+    #prima .destra, #seconda .destra{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        margin-bottom: 20px;
+    }
+
+    #saluto{
+        margin-top: 10px;
+        font-size: 42pt;
+    }
+
+    #links{
+        margin-right: 20px;
+    }
+}

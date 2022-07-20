@@ -1,0 +1,266 @@
+body{
+    margin: 0;
+    font-family: 'Poppins';
+}
+  
+#sfondo{
+    background-color: #c7e0d0;
+    height: 300px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+}
+
+#links{
+    margin-right: 50px;
+}
+
+#links a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+}
+
+#links a:hover, .testo a:hover{
+    color: #b08ec9;
+    cursor: pointer;
+}
+
+#saluto{
+    font-weight: 100;
+    color: white;
+    font-size: 50pt;
+    margin-left: 100px;
+    text-decoration: none;
+}
+
+main{
+    width: 80vw;
+    margin: auto;
+    margin-top: -55px;
+}
+
+#titolo{
+    width: calc(100% - 30px);
+    background-color: #c5add7;
+    font-size: 38pt;
+    font-weight: 100;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.articoli{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+
+.articoli article{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    width: calc(33.3% - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+article img{
+    width: 100%;
+}
+
+article .testo{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.testo a{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    line-height: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+button{
+    margin-top: 10px;
+    font-family: 'Poppins';
+    width: fit-content;
+    cursor: pointer;
+}
+
+
+#articolo{
+    margin-bottom: 60px;
+}
+
+#articolo h1{
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 30pt;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#articolo h2{
+    display: inline-block;
+    font-size: 18pt;
+    margin: 0px;
+    font-weight: 400;
+}
+
+/* tasto rubricaletteraria*/
+#articolo div .titolo{
+    display: inline-block;
+    font-size: 16pt;
+    border-radius: 5px;
+    padding: 0px 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #c5add7;
+    color: white;
+    font-weight: 100;
+}
+
+#articolo img{
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 25px;
+}
+
+#articolo section{
+    display: inline;
+}
+
+#articolo p{
+    text-align: justify;
+}
+  
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #c7e0d0;
+    font-size: 18pt;
+    font-weight: 100;
+    color: white;
+}
+  
+.hidden{
+    display: none;
+}
+  
+
+@media (max-width: 900px){
+    main{
+        width: 90vw;
+    }
+
+    #sfondo .titolo{
+        font-size: 40pt;
+        margin-left: 80px;
+    }  
+
+    .testo a{
+        font-size: 16pt;
+    }
+
+    .testo section{
+        font-size: 11pt;
+    }
+
+    footer{
+        height: 80px;
+    }
+
+    footer div{
+        font-size: 14pt;
+    }
+
+    h1{
+        font-size: 26pt;
+    }
+
+    #articolo h2{
+        font-size: 14pt;
+    }
+
+    #articolo div .titolo{
+        font-size: 12pt;
+    }
+
+    #saluto{
+        margin-left: 30px;
+    }
+
+    #links{
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 750px){
+    main{
+        margin-top: -45.5px;
+    }
+
+    #sfondo{
+        height: 250px;
+    }
+
+    #saluto{
+        font-size: 40pt;
+    }
+
+    #titolo{
+        font-size: 31pt;
+    }
+
+    .articoli{
+        margin-bottom: 0px;
+    }
+
+    .articoli article{
+        width: calc(50% - 10px);
+    }
+
+    #articolo img{
+        width: 100%;
+    }  
+
+    footer{
+        height: 60px;
+    }
+
+    footer div{
+        font-size: 11pt;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 550px){
+    .articoli article{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    h1{
+        font-size: 20pt;
+    }
+}
