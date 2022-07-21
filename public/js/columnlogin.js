@@ -81,7 +81,9 @@ function visualizzazione(json){
     autore.textContent = json.autore+' | ';
     const link1 = document.createElement('div');
     link1.classList.add('titolo');
-    link1.innerHTML = "rubrica<strong>letteraria</strong>";
+    link1.textContent = "rubrica";
+    const strong = document.createElement('strong');
+    strong.textContent = 'letteraria';
     link1.addEventListener('click', articoli);
     const immagine = document.createElement('img');
     immagine.src = json.immagine;
@@ -95,6 +97,7 @@ function visualizzazione(json){
     sezione.appendChild(div);
     div.appendChild(autore);
     div.appendChild(link1);
+    link1.appendChild(strong);
     sezione.appendChild(immagine);
     sezione.appendChild(testo);
     sezione.appendChild(link);
