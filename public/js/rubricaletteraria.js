@@ -89,21 +89,23 @@ function visualizzazione(json){
     autore.textContent = json.autore+' | ';
     const link1 = document.createElement('div');
     link1.classList.add('titolo');
-    link1.innerHTML = "rubrica<strong>letteraria</strong>";
+    link1.textContent = "rubrica";
+    const strong = document.createElement('strong');
+    strong.textContent = 'letteraria';
     link1.addEventListener('click', articoli);
     const immagine = document.createElement('img');
     immagine.src = json.immagine;
-    const testo = document.createElement('em');
+    const testo = document.createElement('section');
     testo.innerHTML = json.testo;
     const link = document.createElement('button');
     link.textContent = "TORNA AGLI ARTICOLI";
     link.addEventListener('click', articoli);
 
     sezione.appendChild(titolo);
-    //sezione.appendChild(autore);
     sezione.appendChild(div);
     div.appendChild(autore);
     div.appendChild(link1);
+    link1.appendChild(strong);
     sezione.appendChild(immagine);
     sezione.appendChild(testo);
     sezione.appendChild(link);
@@ -128,7 +130,6 @@ function articoli(){
 //MENÙ A TENDINA
 
 function tendina(event){
-
     const tendina = document.querySelector('#tendina');
     const menu = event.currentTarget;
     
@@ -137,7 +138,6 @@ function tendina(event){
 }
 
 function menu(){
-
     const tendina = document.querySelector('#tendina');
     const menu = document.querySelector('#menu');
     
